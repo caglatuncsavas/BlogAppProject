@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\BlogApp.WebApi\\BlogApp.WebApi.csproj": {}
+    "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\BlogApp.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\BlogApp.WebApi\\BlogApp.WebApi.csproj": {
+    "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\BlogApp.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\BlogApp.WebApi\\BlogApp.WebApi.csproj",
+        "projectUniqueName": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\BlogApp.WebApi.csproj",
         "projectName": "BlogApp.WebApi",
-        "projectPath": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\BlogApp.WebApi\\BlogApp.WebApi.csproj",
+        "projectPath": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\BlogApp.WebApi.csproj",
         "packagesPath": "C:\\Users\\ercan\\.nuget\\packages\\",
-        "outputPath": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\BlogApp.WebApi\\obj\\",
+        "outputPath": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ercan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,6 +50,8 @@
               "version": "[7.0.14, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.14, )"
             },
