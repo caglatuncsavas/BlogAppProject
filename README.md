@@ -16,3 +16,7 @@ Get Category by Id
 Edit button and that router add.
 
 Update Category-Httpput
+
+4.
+Delete Category By ıd -API
+Delete Category Service Method -uı
