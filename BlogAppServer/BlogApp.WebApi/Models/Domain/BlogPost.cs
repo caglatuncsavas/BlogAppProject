@@ -10,6 +10,5 @@ public class BlogPost
     public string UrlHandle { get; set; }
     public string Author { get; set; }
     public bool IsVisible { get; set; }
-    public DateTime CreatedAt { get; set; }
-    public DateTime? UpdatedAt { get; set; }
+    public DateTime PublishedDate { get; set; }
 }

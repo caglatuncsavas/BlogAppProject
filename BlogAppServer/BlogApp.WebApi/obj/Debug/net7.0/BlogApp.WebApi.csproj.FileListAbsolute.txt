@@ -68,9 +68,10 @@ C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\staticwebassets.
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\staticwebassets.build.json
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\staticwebassets.development.json
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\scopedcss\bundle\BlogApp.WebApi.styles.css
-C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\BlogApp.WebApi.csproj.CopyComplete
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\BlogApp.WebApi.dll
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\refint\BlogApp.WebApi.dll
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\BlogApp.WebApi.pdb
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\BlogApp.WebApi.genruntimeconfig.cache
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\ref\BlogApp.WebApi.dll
+C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\BlogApp.WebApi.sourcelink.json
+C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\BlogApp..12CD5904.Up2Date
