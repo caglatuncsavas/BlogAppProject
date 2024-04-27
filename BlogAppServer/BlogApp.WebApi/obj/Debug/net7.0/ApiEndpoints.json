@@ -16,6 +16,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BlogApp.WebApi.Controllers.BlogPostsController",
+    "Method": "GetAllBlogPosts",
+    "RelativePath": "api/BlogPosts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BlogApp.WebApi.Controllers.CategoriesController",
     "Method": "CreateCategory",
     "RelativePath": "api/Categories",
