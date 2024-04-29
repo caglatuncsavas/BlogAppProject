@@ -26,6 +26,59 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BlogApp.WebApi.Controllers.BlogPostsController",
+    "Method": "GetBlogPostsById",
+    "RelativePath": "api/BlogPosts/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogApp.WebApi.Controllers.BlogPostsController",
+    "Method": "UpdateBlogPostById",
+    "RelativePath": "api/BlogPosts/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "BlogApp.WebApi.Models.DTO.UpdateBlogPostRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogApp.WebApi.Controllers.BlogPostsController",
+    "Method": "DeleteBlogPost",
+    "RelativePath": "api/BlogPosts/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BlogApp.WebApi.Controllers.CategoriesController",
     "Method": "CreateCategory",
     "RelativePath": "api/Categories",

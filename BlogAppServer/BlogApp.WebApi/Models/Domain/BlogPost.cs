@@ -11,5 +11,5 @@ public class BlogPost
     public string Author { get; set; }
     public bool IsVisible { get; set; }
     public DateTime PublishedDate { get; set; }
-    public ICollection<Category> Catgeories { get; set; }
+    public ICollection<Category> Categories { get; set; }
 }

@@ -15,7 +15,6 @@ blogPost$?: Observable<BlogPost[]>;
   
   ngOnInit(): void {
     //Get all blog posts from API
-    this.blogPostService.getAllBlogPosts();
     this.blogPost$ = this.blogPostService.getAllBlogPosts();
   }
 }

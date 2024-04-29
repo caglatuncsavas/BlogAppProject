@@ -18,9 +18,47 @@ public class BlogPostRepository : IBlogPostRepository
         await _context.SaveChangesAsync();
         return blogPost;
     }
-
     public async Task<IEnumerable<BlogPost>> GetAllAsync()
     {
-       return await _context.BlogPosts.ToListAsync();
+       return await _context.BlogPosts.Include(p=>p.Categories).ToListAsync();
+    }
+
+    public async Task<BlogPost?> GetByIdAsync(Guid id)
+    {
+        return await _context.BlogPosts.Include(p=> p.Categories).FirstOrDefaultAsync(p => p.Id == id);
+    }
+
+    public async Task<BlogPost?> UpdateAsync(BlogPost blogPost)
+    {
+        var existingBlogPost = await _context.BlogPosts
+            .Include(p=> p.Categories)
+            .FirstOrDefaultAsync(p => p.Id == blogPost.Id);
+
+        if (existingBlogPost is null)
+        {
+            return null;
+        }
+
+        //Update BlogPost
+
+        _context.Entry(existingBlogPost).CurrentValues.SetValues(blogPost);
+
+        //Update Categories
+        existingBlogPost.Categories = blogPost.Categories;
+
+        await _context.SaveChangesAsync();
+        return blogPost;
+    }
+
+    public async Task<BlogPost?> DeleteAsync(Guid id)
+    {
+        var existingBlogPost= await _context.BlogPosts.FirstOrDefaultAsync(p => p.Id == id);
+        if (existingBlogPost is not null)
+        {
+            _context.BlogPosts.Remove(existingBlogPost);
+            await _context.SaveChangesAsync();
+            return existingBlogPost;
+        }
+        return null;
     }
 }
