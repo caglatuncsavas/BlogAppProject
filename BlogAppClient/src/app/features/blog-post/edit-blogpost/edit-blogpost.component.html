@@ -37,6 +37,7 @@
 
                 <div class="mt-3">
                     <label for="coverImageUrl" class="form-label">Cover Image Url</label>
+                    <button type="button" class="btn btn-light" (click)="openImageSelector()">Select Image</button>
 
                     <ng-container *ngIf="model.coverImageUrl !== ''">
                         <div>
@@ -82,4 +83,9 @@
             </div>
         </form>
     </ng-container>
+</div>
+
+<div class="images-container-modal" [ngClass]="{'d-block': isImageSelectorVisible, 'd-none': !isImageSelectorVisible}">
+    <button type="button" class="btn btn-light" style="position: fixed; top: 10px; right: 10px;" (click)="closeImageSelector()">X</button>
+    <app-image-selector></app-image-selector>
 </div>
