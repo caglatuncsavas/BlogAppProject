@@ -20,3 +20,7 @@ Update Category-Httpput
 4.
 Delete Category By ıd -API
 Delete Category Service Method -uı
+
+
+28.04.2024
+Display category in BlogPostList componenet and add Category like multiselect dropdown
