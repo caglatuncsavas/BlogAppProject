@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "BlogApp.WebApi\\Repositories\\Implementation\\ImageRepository.cs",
               "ToolTip": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\Repositories\\Implementation\\ImageRepository.cs",
               "RelativeToolTip": "BlogApp.WebApi\\Repositories\\Implementation\\ImageRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAACOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T19:26:22.648Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "BlogApp.WebApi\\Repositories\\Interface\\IImageRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T19:25:50.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T19:25:50.39Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "BlogApp.WebApi\\Controllers\\ImagesController.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAAgwF0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T19:24:09.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T19:24:09.311Z"
             }
           ]
         },
