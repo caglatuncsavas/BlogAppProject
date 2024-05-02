@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\BlogAppProject\\BlogAppServer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{88FC469D-C5E9-41DF-B702-82687EEFED83}|BlogApp.WebApi\\BlogApp.WebApi.csproj|c:\\blogappproject\\blogappserver\\blogapp.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FC469D-C5E9-41DF-B702-82687EEFED83}|BlogApp.WebApi\\BlogApp.WebApi.csproj|solutionrelative:blogapp.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88FC469D-C5E9-41DF-B702-82687EEFED83}|BlogApp.WebApi\\BlogApp.WebApi.csproj|c:\\blogappproject\\blogappserver\\blogapp.webapi\\context\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88FC469D-C5E9-41DF-B702-82687EEFED83}|BlogApp.WebApi\\BlogApp.WebApi.csproj|solutionrelative:blogapp.webapi\\context\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,19 +47,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "BlogApp.WebApi\\Program.cs",
+              "ToolTip": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\Program.cs",
+              "RelativeToolTip": "BlogApp.WebApi\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T12:09:20.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AuthDbContext.cs",
               "DocumentMoniker": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\Context\\AuthDbContext.cs",
               "RelativeDocumentMoniker": "BlogApp.WebApi\\Context\\AuthDbContext.cs",
               "ToolTip": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\Context\\AuthDbContext.cs",
               "RelativeToolTip": "BlogApp.WebApi\\Context\\AuthDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T11:40:53.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "BlogApp.WebApi\\Context\\AppDbContext.cs",
@@ -63,12 +80,11 @@
               "RelativeToolTip": "BlogApp.WebApi\\Context\\AppDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T11:40:07.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T11:40:07.781Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IBlogPostRepository.cs",
               "DocumentMoniker": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\Repositories\\Interface\\IBlogPostRepository.cs",
               "RelativeDocumentMoniker": "BlogApp.WebApi\\Repositories\\Interface\\IBlogPostRepository.cs",
@@ -76,12 +92,11 @@
               "RelativeToolTip": "BlogApp.WebApi\\Repositories\\Interface\\IBlogPostRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T00:48:00.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T00:48:00.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BlogPostRepository.cs",
               "DocumentMoniker": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\Repositories\\Implementation\\BlogPostRepository.cs",
               "RelativeDocumentMoniker": "BlogApp.WebApi\\Repositories\\Implementation\\BlogPostRepository.cs",
@@ -89,12 +104,11 @@
               "RelativeToolTip": "BlogApp.WebApi\\Repositories\\Implementation\\BlogPostRepository.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwEUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T00:47:57.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T00:47:57.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BlogPostsController.cs",
               "DocumentMoniker": "C:\\BlogAppProject\\BlogAppServer\\BlogApp.WebApi\\Controllers\\BlogPostsController.cs",
               "RelativeDocumentMoniker": "BlogApp.WebApi\\Controllers\\BlogPostsController.cs",
@@ -102,8 +116,7 @@
               "RelativeToolTip": "BlogApp.WebApi\\Controllers\\BlogPostsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAKMAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T00:45:50.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T00:45:50.738Z"
             }
           ]
         },
