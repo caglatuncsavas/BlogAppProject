@@ -75,3 +75,10 @@ C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\BlogApp.WebApi.g
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\ref\BlogApp.WebApi.dll
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\BlogApp.WebApi.sourcelink.json
 C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\obj\Debug\net7.0\BlogApp..12CD5904.Up2Date
+C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\BlogAppProject\BlogAppServer\BlogApp.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
