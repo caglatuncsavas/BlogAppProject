@@ -2,6 +2,7 @@
 using BlogApp.WebApi.Models.Domain;
 using BlogApp.WebApi.Models.DTO;
 using BlogApp.WebApi.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogApp.WebApi.Controllers;
@@ -17,6 +18,7 @@ public class CategoriesController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> CreateCategory([FromBody]CreateCategoryRequestDto request)
     {
        //Map DTO to Domain Model
@@ -88,6 +90,7 @@ public class CategoriesController : ControllerBase
     //PUT: https://localhost:7228/api/Categories/{id}
     [HttpPut]
     [Route("{id:Guid}")]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> EditCategory([FromRoute] Guid id, UpdateCategoryRequestDto request)
     {
         //Convert DTO to Domain Model
@@ -119,6 +122,7 @@ public class CategoriesController : ControllerBase
 
     [HttpDelete]
     [Route("{id:Guid}")]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> DeleteCategory([FromRoute] Guid id)
     {
        var category = await categoryRepository.DeleteAsync(id);

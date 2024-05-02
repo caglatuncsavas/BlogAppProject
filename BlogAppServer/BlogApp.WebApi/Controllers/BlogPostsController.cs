@@ -2,6 +2,7 @@
 using BlogApp.WebApi.Models.DTO;
 using BlogApp.WebApi.Repositories.Implementation;
 using BlogApp.WebApi.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,6 +22,7 @@ public class BlogPostsController : ControllerBase
 
     //POST: {apiBaseUrl}/api/blogposts
     [HttpPost]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> CreateBlogPost([FromBody]CreateBlogPostRequestDto request)
     {
         //Convert DTO to Domain Model
@@ -174,6 +176,7 @@ public class BlogPostsController : ControllerBase
     //PUT: {apiBaseUrl}/api/blogposts/{id}
     [HttpPut]
     [Route("{id:Guid}")]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> UpdateBlogPostById([FromRoute] Guid id, UpdateBlogPostRequestDto request)
     {
         //Convert DTO to Domain Model
@@ -232,10 +235,10 @@ public class BlogPostsController : ControllerBase
         return Ok(response);
     }
 
-
     //DELETE: {apiBaseUrl}/api/blogposts/{id}
     [HttpDelete]
     [Route("{id:Guid}")]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> DeleteBlogPost([FromRoute] Guid id)
     {
        var deletedBlogpost= await blogPostRepository.DeleteAsync(id);
