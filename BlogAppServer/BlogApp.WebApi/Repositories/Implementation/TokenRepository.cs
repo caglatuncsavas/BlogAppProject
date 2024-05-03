@@ -20,14 +20,15 @@ public class TokenRepository : ITokenRepository
         //Create Claims
         var claims = new List<Claim>
        {
-           new Claim(ClaimTypes.Email, user.Email),
+           new Claim(ClaimTypes.Email, user.Email ?? ""),
        };
 
         claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 
         // JWT Security Token Parameters
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt: Key"]));
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]));
+
         var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
         var token = new JwtSecurityToken(
@@ -39,6 +40,6 @@ public class TokenRepository : ITokenRepository
 
         //Return Token
 
-        return new JwtSecurityTokenHandler().WriteToken(token);
+        return new JwtSecurityTokenHandler().WriteToken(token); 
     }
 }

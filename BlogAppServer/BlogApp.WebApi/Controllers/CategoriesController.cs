@@ -115,6 +115,7 @@ public class CategoriesController : ControllerBase
             Name = category.Name,
             UrlHandle = category.UrlHandle
         };
+
         return Ok(response);
     }
 
