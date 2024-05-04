@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogApp.WebApi.Controllers;
+
+// https://localhost:xxxx/api/categories
 [Route("api/[controller]")]
 [ApiController]
 public class CategoriesController : ControllerBase
@@ -18,7 +20,7 @@ public class CategoriesController : ControllerBase
     }
 
     [HttpPost]
-    [Authorize(Roles = "Writer")]
+    //[Authorize(Roles = "Writer")]
     public async Task<IActionResult> CreateCategory([FromBody]CreateCategoryRequestDto request)
     {
        //Map DTO to Domain Model
@@ -42,11 +44,14 @@ public class CategoriesController : ControllerBase
         return Ok(response);
     }
 
-    //GET: https://localhost:7228/api/Categories
+    //GET: https://localhost:7228/api/Categories?query=html&sortBy=name&sortDirection=desc
     [HttpGet]
-    public async Task<IActionResult> GetAllCategories()
+    public async Task<IActionResult> GetAllCategories([FromQuery] string? query, [FromQuery] string? sortBy, [FromQuery] string? sortDirection,
+        [FromQuery] int? pageNumber,
+        [FromQuery] int? pageSize)
     {
-       var categories =  await categoryRepository.GetAllAsync();//Give us all the categories from the database
+       var categories =  await categoryRepository
+            .GetAllAsync(query, sortBy, sortDirection, pageNumber, pageSize);//Give us all the categories from the database
 
         //Map Domain Model to DTO
 
@@ -90,7 +95,7 @@ public class CategoriesController : ControllerBase
     //PUT: https://localhost:7228/api/Categories/{id}
     [HttpPut]
     [Route("{id:Guid}")]
-    [Authorize(Roles = "Writer")]
+    //[Authorize(Roles = "Writer")]
     public async Task<IActionResult> EditCategory([FromRoute] Guid id, UpdateCategoryRequestDto request)
     {
         //Convert DTO to Domain Model
@@ -142,6 +147,18 @@ public class CategoriesController : ControllerBase
         };
         return Ok(response);
 
+    }
+
+    
+    //GET: https://localhost:7228/api/Categories/count
+    [HttpGet]
+    [Route("count")]
+    //[Authorize(Roles = "Writer")]
+    public async Task<IActionResult> GetCategoriesTotal()
+    {
+        var count = await categoryRepository.GetCount();
+
+        return Ok(count);
     }
 }
 
